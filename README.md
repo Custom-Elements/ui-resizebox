@@ -1,6 +1,6 @@
-#ui-resizebar
-This makes a resizeable panel, which by default will go in flow, but you 
-can easily make a docked resizer by using `absolute` positioning. Grab the 
+#ui-resizebox
+This makes a resizeable panel, which by default will go in flow, but you
+can easily make a docked resizer by using `absolute` positioning. Grab the
 element on the `left` or `right` and resize away.
 
 

@@ -1,5 +1,5 @@
-Build ui-resizebar from source into
-build/ui-resizebar.html, all streamlined and ready to be included.
+Build ui-resizebox from source into
+build/ui-resizebox.html, all streamlined and ready to be included.
 
 Having both the literate source, and the fully built output allows you to choose
 if you want to have a fully `vulcanize` input, or to fully `vulcanize` your
@@ -53,10 +53,10 @@ Make up a readme based on literate programming of the element.
 Vulcanize for the speed.
 
     gulp.task 'vulcanize', ['elements'], ->
-      built = 'build/ui-resizebar.html'
+      built = 'build/ui-resizebox.html'
       gulp.src ''
         .pipe shell([
-          "vulcanize --inline --strip -o ui-resizebar.html #{__dirname}/build/*.html"
+          "vulcanize --inline --strip -o ui-resizebox.html #{__dirname}/build/*.html"
           ])
 
     gulp.task 'build', ['vulcanize', 'readme']

@@ -3,9 +3,9 @@
 <html>
   <head>
     <title>ui-resizebar</title>
-    <script src="bower_components/platform/platform.js"></script>
-    <link rel="import" href="bower_components/polymer/polymer.html">
-    <link rel="import" href="build/ui-resizebar.html">
+    <script src="node_modules/polymer/platform.js"></script>
+    <link rel="import" href="node_modules/polymer/polymer.html">
+    <link rel="import" href="build/ui-resizebox.html">
     <style>
       body {
         font-family: "Helvetica Neue", "Helvetica", Arial;
@@ -26,14 +26,14 @@
         height: 100%;
         padding: 1em;
       }
-      ui-resizebar[left] {
+      ui-resizebox[left] {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         width: 20em;
       }
-      ui-resizebar[right] {
+      ui-resizebox[right] {
         position: absolute;
         top: 0;
         left: 0;
@@ -44,12 +44,12 @@
   </head>
   <body unresolved>
     <div id="holder">
-      <ui-resizebar right>
+      <ui-resizebox right>
         <div class="sidebar">Stuff</div>
-      </ui-resizebar>
-      <ui-resizebar left>
+      </ui-resizebox>
+      <ui-resizebox left>
         <div class="sidebar">Things</div>
-      </ui-resizebar>
+      </ui-resizebox>
     </div>
     <script>
       document.addEventListener('polymer-ready', function() {
