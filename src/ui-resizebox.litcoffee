@@ -23,7 +23,7 @@ Use the touch tracking events to process a drag of the resize handle.
 
       track: (evt) ->
         delta = evt['dx']
-        if @right?
+        if @left?
           delta *= -1
         @style['width'] = "#{@size - delta}px"
 

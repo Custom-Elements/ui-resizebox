@@ -27,28 +27,14 @@
         height: 100%;
         padding: 1em;
       }
-      ui-resizebox[left] {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 20em;
-      }
-      ui-resizebox[right] {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 20em;
-      }
     </style>
   </head>
   <body unresolved>
     <div id="holder">
-      <ui-resizebox right>
+      <ui-resizebox left>
         <div class="sidebar">Rock</div>
       </ui-resizebox>
-      <ui-resizebox left>
+      <ui-resizebox right>
         <div class="sidebar">Hard Place</div>
       </ui-resizebox>
     </div>
